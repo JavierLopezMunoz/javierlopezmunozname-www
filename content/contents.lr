@@ -1,0 +1,36 @@
+title: Javier Lopez | Senior Python Consultant
+---
+body:
+
+<h2 class="title">Looking for a Django Expert to Build Your Next Web App?</h2>
+<h5 class="description">Hi, I'm Javier Lopez a Web Architech consultant from Barcelona. I help teams to build, improve or maintain their web applications.</h5>
+<h5 class="description">In addition to work with other teams, I run <a href="https://calculamos.es">my own SaaS</a> and contribute to <a href="https://github.com/JavierLopezMunoz">open source</a> projects.</h5>
+<h3 class="subtitle">Why should you hire me?</h3>
+<h5 class="description">I have over <a href="https://www.linkedin.com/in/javierlopezmunoz/">15 years of experience</a> leading and recruiting technical teams, implementing web architectures and setting cloud infrastructures.</h5>
+<h5 class="description">I am an expert building Django web applications, APIs based in Flask and setting (or migrating) infraestructures in Amazon Web Serices.</h5>
+<h3 class="subtitle">Customers</h3>
+<h5 class="description">My best customers are small-to-medium sized teams that need to scale their web application, to migrate their infrastructure to AWS or build from scratch a mature implementation.</h5>
+<h5 class="description"> These are some of the projects I worked on in the past.</h5>
+<div class="row" style="padding-bottom: 20px;">
+  <div class="col-md-2 offset-md-2"><a href="https://www.infopraca.pl" title="Infopraca"><img src="/static/img/infopraca.png" alt="Infopraca"></a></div>
+  <div class="col-md-2"><a href="https://europelanguagejobs.com" title="Europe Language Jobs"><img src="/static/img/europelanguagejobs.png" alt="Europe Language Jobs"></a></div>
+  <div class="col-md-2"><a href="http://www.cazadoresderayosgamma.com" title="Cazadores de rayos gammas"><img src="/static/img/cazadores.png" alt="Cazadores de rayos gammas"></a></div>
+  <div class="col-md-2"><a href="http://www.photoslurp.com" title="VCMI report"><img src="/static/img/vcmi.png" alt="VCMI report"></a></div>
+</div>
+<h3 class="subtitle">Let's work together</h3>
+<h5 class="description">I'm now accepting new client projects. My services are available as fixed-price packages or per-day consultation. Please don't hesitate to ask for guidance.</h5>
+<h5>Starting at €170 for a one-hour consultation call. <a href="/services">View all packages</a>.</h5>
+<div class="row" style="padding-top: 20px;">
+  <div class="card">
+    <div class="card-block">
+      <div class="row">
+        <div class="col-md-2 offset-md-1">  
+         <img src="/static/img/stephan.jpg" alt="Stephan Pötschner" class="rounded-circle img-raised">
+        </div>
+        <div class="col-md-8 offset-md-1">  
+          <p>"Javier is one of the best software architects and team leads I have had the pleasure to work with in my career."</p>
+          <div class="author">— Stephan Pötschner, Senior Django Consultant</div>
+        </div>
+    </div>
+  </div>
+</div>
