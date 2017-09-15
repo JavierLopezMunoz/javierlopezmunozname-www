@@ -1,6 +1,21 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
 {% block title %}{{ this.title }}{% endblock %}
+{% block headline %}
+<div class="page-header header-filter header-small" data-parallax="true" style="background-image: url('/static/img/emacs.jpg');">
+  <div class="container">
+    <div class="row">
+      <h1 class="title">{{ this.title }}</h1>
+    </div>
+  </div>
+</div>
+{% endblock %}
 {% block body %}
-  {{ render_blog_post(this) }}
+<div class="section section-text">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h3 class="title">{{ this.title }}</h3>
+      {{ this.body }}
+    </div>
+  </div>
+</div>
 {% endblock %}

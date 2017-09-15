@@ -1,32 +1,36 @@
 <!doctype html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title>{% block title %}Javier Lopez | Web Architech Consultant{% endblock %}</title>
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <!-- CSS Files -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
   <link rel="stylesheet" href="{{ '/static/css/bootstrap.min.css'|url }}">
-  <link rel="stylesheet" href="{{ '/static/css/now-ui-kit.css'|url }}">
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link rel="stylesheet" href="{{ '/static/css/demo.css'|url }}">
-  <link rel="stylesheet" href="{{ '/static/css/blog.css'|url }}">
+  <link rel="stylesheet" href="{{ '/static/css/material-kit.css?v=1.2.0'|url }}">
 </head>
-<body>
+<body class="{% block body_class %}contact-page{% endblock %}">
   <!-- Navbar -->
-  <nav class="navbar navbar-toggleable-md bg-primary fixed-top" color-on-scroll="500">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-      <div class="navbar-translate">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-bar bar1"></span>
-          <span class="navbar-toggler-bar bar2"></span>
-          <span class="navbar-toggler-bar bar3"></span>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
         <a href="{{ '/'|url }}" class="navbar-brand">Javier Lopez</a>
       </div>
-      <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="{{ '/static/img/blurred-image-1.jpg'|url }}">
-        <ul class="navbar-nav">
-          {% for href, title in [['/', 'Home'], ['/services', 'Services'], ['/contact', 'Contact'], ['/blog', 'Blog']] %}
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          {% for href, title, icon in [['/', 'Home', 'homey'], ['/services', 'Servicios', 'list'], ['/contact', 'Contacto', 'email'], ['/blog', 'Blog', 'library_books']] %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ href|url }}">{{ title }}</a>
+            <a class="nav-link" href="{{ href|url }}"
+               ><i class="material-icons">{{ icon }}</i>{{ title }}</a>
           </li>
           {% endfor %}
         </ul>
@@ -34,55 +38,36 @@
     </div>
   </nav>
   <!-- End Navbar -->
+  {% block headline %}{% endblock %}
   <div class="wrapper">
-    <div class="page-header page-header-none"></div>
-    <div class="main">
-      <div class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 offset-md-2">
-              {% block body %}{% endblock %}
-            </div>
-          </div>
-        </div>
+    <div class="header"></div>
+    <div class="main main-raised">
+      <div class="container">
+        {% block body %}{% endblock %}
       </div>
     </div>
-    <footer class="footer footer-default">
-      <div class="container">
-        <nav>
-          <ul>
-            {% for href, title in [['/services', 'Services'], ['/contact', 'Hire me']] %}
-            <li{% if this.is_child_of(href) %} class="nav-item active"{% else %} class="nav-item"{% endif%}>
-              <a class="nav-link" href="{{ href|url }}">{{ title }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </nav>
-        <div class="copyright">
-          &copy; 2017 Javier Lopez. All rights reserved.
-        </div>
-      </div>
-    </footer>
   </div>
+  <footer class="footer">
+    <div class="container">
+      <nav class="pull-left">
+        <ul>
+          {% for href, title in [['/services', 'Servicios'], ['/contact', 'Contacto']] %}
+          <li{% if this.is_child_of(href) %} class="nav-item active"{% else %} class="nav-item"{% endif%}>
+            <a class="nav-link" href="{{ href|url }}">{{ title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="copyright pull-right">
+        &copy; 2017 Javier Lopez. Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
 </body>
 <!--   Core JS Files   -->
-<script src="{{ '/static/js/core/jquery.3.2.1.min.js'|url }}" type="text/javascript"></script>
-<script src="{{ '/static/js/core/bootstrap.min.js'|url }}" type="text/javascript"></script>
+<script src="{{ '/static/js/jquery.min.js'|url }}" type="text/javascript"></script>
+<script src="{{ '/static/js/bootstrap.min.js'|url }}" type="text/javascript"></script>
+<script src="{{ '/static/js/material.min.js'|url }}" type="text/javascript"></script>
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-<script src="{{ '/static/js/now-ui-kit.js'|url }}" type="text/javascript"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        // the body of this function is in assets/js/now-ui-kit.js
-        nowuiKit.initSliders();
-    });
-
-    function scrollToDownload() {
-
-        if ($('.section-download').length != 0) {
-            $("html, body").animate({
-                scrollTop: $('.section-download').offset().top
-            }, 1000);
-        }
-    }
-</script>
+<script src="{{ '/static/js/material-kit.js'|url }}" type="text/javascript"></script>
 </html>

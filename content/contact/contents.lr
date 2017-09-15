@@ -1,26 +1,65 @@
-title: Contact | Javier Lopez
+title: Contacto | Javier Lopez
+---
+headline:
+
+<div class="page-header header-filter header-small" data-parallax="true" style="background-image: url('/static/img/magic.jpg');">
+  <div class="container">
+    <div class="row">
+      <h1 class="title">Trabajemos Juntos, Contactame</h1>
+      <h4>Para ver si podemos hacer un buen equipo explicame un poco tu proyecto.</h4>
+    </div>
+  </div>
+</div>
 ---
 body:
 
-<h2 class="title">Let's talk about your project!</h2>
-<p class="description">To make sure we’re a good fit, tell me a bit about your project.</p>
-<form>
-  <div class="form-group">
-    <label for="name">Your name</label>
-    <input type="text" class="form-control" id="name">
+<div class="contact-content">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="material-icons">person</i>
+          </span>
+          <div class="form-group label-floating is-empty">
+            <input type="text" class="form-control" placeholder="Tu nombre" id="name">
+            <span class="material-input"></span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="material-icons">email</i>
+          </span>
+          <div class="form-group label-floating is-empty">
+            <input type="email" class="form-control" placeholder="Tu email" id="email">
+            <span class="material-input"></span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="material-icons">play_arrow</i>
+          </span>
+          <div class="form-group label-floating is-empty">
+            <textarea class="form-control" id="description" placeholder="Explicame un poco tu proyecto" rows="3"></textarea>
+            <span class="material-input"></span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="material-icons">list</i>
+          </span>
+          <div class="form-group label-floating is-empty">
+            <input type="text" class="form-control" placeholder="¿Cómo has oido hablar de mi?" id="source">
+            <span class="material-input"></span>
+          </div>
+        </div>
+        <div class="submit">
+          <button type="submit" class="btn btn-primary btn-raised pull-right">Enviar</button>
+        </div>
+      </form>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="email">Your email address</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="description">What's your project about?</label>
-    <textarea class="form-control" id="description" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="source">How did you hear about me?</label>
-    <input type="text" class="form-control" id="source">
-  </div>
-  <button type="submit" class="btn btn-primary">Send Inquiry</button>
-</form>
+</div>

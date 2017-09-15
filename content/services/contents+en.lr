@@ -1,0 +1,21 @@
+title: Services | Javier Lopez
+---
+body:
+
+<h2 class="title">Expert services to help you with web application</h2>
+<p class="description">My services are available as fixed-price packages or per-day consultation. Please don't hesitate to ask for guidance. Just <a href="/contact">contact me</a> and we’ll figure out the best way to work together.</p>
+<h3 class="subtitle">One-hour Consultation Call</h3>
+<p class="description">Planning your next big startup idea and need technical advice? Don't know how to approach a new feature? Need recommendations for your developer team? I'm happy to help. Let's jump on a call! We'll review your current situation and figure out a brief roadmap for solving your problems. You'll receive a video recording of the call and a brief written recap of key points.</p>
+<p>One-hour consultation call costs €170. <a href="/contact">contact me</a></p>
+<h3 class="subtitle">Scaling Report</h3>
+<p class="description">Is your Django application getting too slow? Let me help you figure out why. I'll take a deep dive into your infrastructure and compile a detailed PDF report about the issues I find. You can use this report to fix these problems on your own, or hire me to do it for you. This package also includes two consultations: one preliminary call, and another call to review your report.</p>
+<p>Scaling Report costs €2372. <a href="/contact">contact me</a></p>
+<h3 class="subtitle">Django Application Maintenance</h3>
+<p class="description">You've got an successful app, but nobody to take care of it? I'll help you keep it up and running safe. At a fixed monthly rate, I'll take care of monitoring, security updates, and small bug fixes so you can focus on growing your app.</p>
+<p>Django Application Maintenance costs €1779/month. <a href="/contact">contact me</a></p>
+<h3 class="subtitle">Web Application Development</h3>
+<p class="description">Want to get your product idea to market? I'll help you build your Minimum Viable Product within a couple of weeks. Together we'll figure out the necessary features and a roadmap to bring them to life. Afterwards I'll start implementing your application so you can launch it soon.</p>
+<p>Web Application Development costs €593/day and usually takes about 15-25 days. <a href="/contact">contact me</a></p>
+<h3 class="subtitle">Migration to Amazon Web Services</h3>
+<p class="description">Do you want to move your infraestructure to AWS? I'll take care of all the steps.</p>
+<p>Migration to Amazon Web Services costs €593/day and usually takes about 5-15 days. <a href="/contact">contact me</a></p>
