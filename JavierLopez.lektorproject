@@ -1,4 +1,15 @@
 [project]
 name = JavierLopez
 url = https://javier.lopezmunoz.name/
-url_style = absolute
+url_style = external
+
+[servers.s3]
+name = S3
+enabled = yes
+target = s3://javier.lopezmunoz.name
+cloudfront = E33WQBPLLTAHRK
+
+[packages]
+lektor-htmlmin = 1.0.2
+lektor-s3 = 0.4.0
+    
