@@ -27,7 +27,7 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          {% for href, title, icon in [['/', 'Home', 'homey'], ['/services', 'Servicios', 'list'], ['/contact', 'Contacto', 'email'], ['/blog', 'Blog', 'library_books']] %}
+          {% for href, title, icon in [['/', 'Home', 'homey'], ['/services', 'Servicios', 'list'], ['/contact', 'Contacto', 'email']] %}
           <li class="nav-item">
             <a class="nav-link" href="{{ href|url }}"
                ><i class="material-icons">{{ icon }}</i>{{ title }}</a>
