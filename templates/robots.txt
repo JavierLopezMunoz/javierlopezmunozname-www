@@ -1,0 +1,5 @@
+Sitemap: https://javier.lopezmunoz.name/sitemap.xml
+User-agent: *
+{% for disallow in this.disallows %}Disallow: {{ disallow }}
+{% else %}Allow: *
+{% endfor %}

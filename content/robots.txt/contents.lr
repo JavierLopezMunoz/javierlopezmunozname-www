@@ -1,0 +1,6 @@
+_template: robots.txt
+---
+_model: robots
+---
+disallows:
+/thx
