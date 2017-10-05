@@ -4,9 +4,4 @@
   <url><loc>{{ page|url(external=true) }}</loc></url>
   {{ loop(page.children) }}
   {% endfor %}
-  {% set en_root = site.get_root(alt='en') %}
-  {% for page in [en_root] if page != this recursive %}
-  <url><loc>{{ page|url(external=true) }}</loc></url>
-  {{ loop(page.children) }}
-  {% endfor %}
 </urlset>
