@@ -1,7 +1,7 @@
 [project]
 name = JavierLopez
 url = https://javier.lopezmunoz.name/
-url_style = external
+url_style = absolute
 
 [servers.s3]
 name = S3

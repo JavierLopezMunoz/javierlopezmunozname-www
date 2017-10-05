@@ -1,0 +1,16 @@
+title: No se encontró la página | Javier Lopez
+---
+headline:
+
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('/static/img/magic.jpg');">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="card card-signup">
+                <h2 class="card-title text-center">Lo sentimos. No se encontró la página</h2>
+                <h3 class="text-center">Error 404</h3>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

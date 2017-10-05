@@ -39,14 +39,16 @@
   </nav>
   <!-- End Navbar -->
   {% block headline %}{% endblock %}
+  {% if this.body %}
   <div class="wrapper">
     <div class="header"></div>
     <div class="main main-raised">
       <div class="container">
-        {% block body %}{% endblock %}
+        {{ this.body }}
       </div>
     </div>
   </div>
+  {% endif %}
   <footer class="footer">
     <div class="container">
       <nav class="pull-left">
