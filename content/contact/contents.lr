@@ -16,7 +16,7 @@ body:
 <div class="contact-content">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <form>
+      <form action="https://forms.lopezmunoz.name/contact" method="POST">
         <div class="input-group">
           <span class="input-group-addon">
             <i class="material-icons">person</i>
@@ -32,7 +32,7 @@ body:
             <i class="material-icons">email</i>
           </span>
           <div class="form-group label-floating is-empty">
-            <input type="email" class="form-control" placeholder="Tu email" id="email">
+            <input type="email" class="form-control" placeholder="Tu correo electrónico" id="email">
             <span class="material-input"></span>
           </div>
         </div>
