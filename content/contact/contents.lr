@@ -17,12 +17,13 @@ body:
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <form action="https://forms.lopezmunoz.name/contact" method="POST">
+        <input type="hidden" name="next" value="https://javier.lopezmunoz.name/thx">
         <div class="input-group">
           <span class="input-group-addon">
             <i class="material-icons">person</i>
           </span>
           <div class="form-group label-floating is-empty">
-            <input type="text" class="form-control" placeholder="Tu nombre" id="name">
+            <input type="text" class="form-control" placeholder="Tu nombre" name="name">
             <span class="material-input"></span>
           </div>
         </div>
@@ -32,7 +33,7 @@ body:
             <i class="material-icons">email</i>
           </span>
           <div class="form-group label-floating is-empty">
-            <input type="email" class="form-control" placeholder="Tu correo electrónico" id="email">
+            <input type="email" class="form-control" placeholder="Tu correo electrónico" name="email">
             <span class="material-input"></span>
           </div>
         </div>
@@ -42,7 +43,7 @@ body:
             <i class="material-icons">play_arrow</i>
           </span>
           <div class="form-group label-floating is-empty">
-            <textarea class="form-control" id="description" placeholder="Explicame un poco tu proyecto" rows="3"></textarea>
+            <textarea class="form-control" name="description" placeholder="Explicame un poco tu proyecto" rows="3"></textarea>
             <span class="material-input"></span>
           </div>
         </div>
@@ -52,7 +53,7 @@ body:
             <i class="material-icons">list</i>
           </span>
           <div class="form-group label-floating is-empty">
-            <input type="text" class="form-control" placeholder="¿Cómo has oido hablar de mi?" id="source">
+            <input type="text" class="form-control" placeholder="¿Cómo has oido hablar de mi?" name="source">
             <span class="material-input"></span>
           </div>
         </div>
