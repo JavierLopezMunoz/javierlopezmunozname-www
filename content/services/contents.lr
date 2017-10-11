@@ -6,7 +6,6 @@ headline:
   <div class="container">
     <div class="row">
       <h1 class="title">Los Servicios De Un Experto Para Ayudarte Con Tu Applicación Web</h1>
-      <h4>Mis servicios están disponibles tanto como paquetes con un precio fijo así como consutoria por día de trabajo. No dudes en contactame para cualquier pregunta. <a href="/contact">Contacta conmigo</a> y encontraremos justos la mejor manera de trabjar juntos.</h4>
     </div>
   </div>
 </div>
@@ -15,6 +14,8 @@ body:
 
 <div class="section">
   <div class="row">
+    <h4>Mis servicios están disponibles tanto como paquetes con un precio fijo así como consutoria por día de trabajo. No dudes en contactame para cualquier pregunta. <a href="/contact">Contacta conmigo</a> y encontraremos justos la mejor manera de trabjar juntos.</h4>
+
     <h2 class="title">Una hora de consultoria via teleconferencia</h2>
     <h5 class="description">¿Estás planificando tu próxima startup y necesitas asesoramiento ténico? ¿Necesitas ayuda para incoporar trabajo remoto en tu equipo técnico? Estaría encantado de ayudarte. Revisemos justos tu problema y encontraremos los pasos necesarios para solucionarlo. Recivirás la teleconferencia gravada en video así como un resume escrito de los pasos a seguir.</h5>
     <p>Una hora de consultoria via teleconferencia tiene un precio de €145. <a href="/contact">Contactame</a></p>
