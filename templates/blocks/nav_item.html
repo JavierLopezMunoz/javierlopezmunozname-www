@@ -1,0 +1,11 @@
+{% if this.button %}
+<li class="button-container">
+  <a class="btn btn-white btn-round"
+{% else %}
+<li class="nav-item">
+  <a class="nav-link active"
+{% endif %}
+      href="{{ this.href.url|url(alt=this.record.alt)}}{{ this.fragment }}"
+    ><i class="material-icons">{{ this.icon }} </i>{{ this.title }}
+    <div class="ripple-container"></div></a>
+</li>

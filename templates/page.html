@@ -1,5 +1,119 @@
-{% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block headline %}
-  {{ this.headline }}
-{% endblock %}
+<!doctype html>
+{% set language = bag('common', this.alt, 'language') %}
+{% set alternate_language = bag('common', this.alt, 'alternate_language') %}
+<html lang="{{ language }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ this.description }}">
+  <meta name="author" content="{{ bag('common').author }}">
+
+  <title>{{ this.title }} | {{ bag('common').name }}</title>
+  <link href="{{ '/static/img/favicon.ico'|asseturl }}" rel="icon" type="image/png">
+
+  <link rel="alternate" hreflang="x-default" href="{{ '.'|url(alt='es') }}" />
+  <link rel="alternate" hreflang="{{ language }}" href="{{ '.'|url }}" />
+  <link rel="alternate" hreflang="{{ alternate_language }}" href="{{ '.'|url(alt=alternate_language) }}" />
+
+  <!-- Custom CSS -->
+  <style type="text/css">
+    {% include 'bootstrap.min.css' %}
+    {% include 'material-kit.css' %}
+  </style>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" type="text/css" />
+
+</head>
+
+<body class="{{ this.body_class|default('landing-page') }}">
+  {{ generate_google_tag_manager() }}
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+          <span class="sr-only">&nbsp;</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="{{ '/'|url }}" class="navbar-brand"><b>{{ bag('common').name }}</b></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          {{ this.nav }}
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  {% if this.background %}
+  <div class="page-header header-filter header-small" style="background-image: url('{{ this.background }}');">
+  {% else %}
+  <div class="page-header header-filter{% if not this.card %} header-small{% endif %}" filter-color="primary">
+  {% endif %}
+  {% if this.quote %}
+    <div class="container">
+      <div class="row">
+        {% if this.card %}
+        <div class="col-md-8 col-md-offset-2">
+          <div class="card card-raised text-center">
+            <div class="card-content">
+              <h2 class="card-title">{{ this.quote }}</h2>
+        {% else %}
+          <h1 class="title">{{ this.quote }}</h1>
+        {% endif %}
+          {% for subquote in this.subquote %}
+          <h4>{{ subquote|safe }}</h4>
+          {% endfor %}
+          {% if this.calltoaction %}
+          <a class="btn btn-round btn-primary btn-rised btn-lg"
+             href="{{ this.href.url|url(alt=this.record.alt) }}{{ this.fragment }}">
+            {% if this.calltoaction_icon %}
+            <i class="material-icons">{{ this.calltoaction_icon }}</i>
+            {% endif %}
+            {{ this.calltoaction }}</a>
+          {% endif %}
+        {% if this.card %}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  </div>
+  {% if this.body %}
+  <div class="wrapper">
+    <div class="main main-raised">
+      <div class="container">
+        {{ this.body }}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  <footer class="footer">
+    <div class="container">
+      <nav class="pull-left">
+        <ul>{{ this.nav }}</ul>
+      </nav>
+      <div class="copyright pull-right">
+        &copy; {{ bag('common', this.alt).copyright }}
+      </div>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script src="{{ '/static/js/jquery.min.js'|asseturl }}" type="text/javascript"></script>
+  <script src="{{ '/static/js/bootstrap.min.js'|asseturl }}" type="text/javascript"></script>
+  <script src="{{ '/static/js/bootstrap-selectpicker.js'|asseturl }}" type="text/javascript"></script>
+  <script src="{{ '/static/js/material.min.js'|asseturl }}" type="text/javascript"></script>
+  <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+  <script src="{{ '/static/js/material-kit.min.js'|asseturl }}" type="text/javascript"></script>
+
+</body>
+</html>

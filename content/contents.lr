@@ -1,29 +1,42 @@
-title: Javier Lopez | Consultor Python Senior
+title: Consultor Python Senior
 ---
-headline:
+background: /static/img/magic.jpg
+---
+quote: ¿Estás Buscando Un Experto En Django Para Construir Tu Proxima Web App?
+---
+subquote:
+Hola, soy Javier López un <strong>Web Architech</strong> de Barcelona. Ayudo a startups a construir, mejorar o mantener sus applicaciones web.
+Además de trabajar con otras startups, tengo <a href="https://calculamos.es">mi propio SaaS</a> y libero muchas de mis <a href="https://github.com/JavierLopezMunoz">herramientas</a>.
+En otra vida fui Astrofísico.
+---
+calltoaction: Infórmate sin compromiso
+---
+calltoaction_icon: question_answer
+---
+href: /contact
+---
+nav:
 
-<div class="page-header header-filter" data-parallax="true" style="background-image: url('/static/img/magic.jpg');">
-  <div class="container">
-    <div class="row">
-      <h1 class="title">¿Estás Buscando Un Experto En Django Para Construir Tu Proxima Web App?</h1>
-      <h4>Hola, soy Javier López un <strong>Web Architech</strong> de Barcelona. Ayudo a startups a construir, mejorar o mantener sus applicaciones web.</h4>
-      <h4>Además de trabajar con otras startups, tengo <a href="https://calculamos.es">mi propio SaaS</a> y contribuyo en proyectos <a href="https://github.com/JavierLopezMunoz">open source</a>.</h4>
-      <p class="pull-left">En otra vida fui Astrofísico.</p>
-    </div>
-  </div>
-</div>
+#### nav_item ####
+href: /services
+----
+title: Servicios
+#### nav_item ####
+href: /contact
+----
+title: Contacto
 ---
 body:
 
 <div class="section">
   <div class="row">
     <h2 class="title">¿Por qué deberías contratarme?</h2>
-    <h5 class="description">Tengo más de <a href="https://www.linkedin.com/in/javierlopezmunoz/">15 años de experiencia</a> liderando y construyendo equipos técnicos, implementando architecturas para applicaciones web así como desarrollando infraestructuras en el Cloud.</h5>
-    <h5 class="description">Soy un experto desarrollando applicaciones con Django, APIs usando Flask o desarrollando (migrando) infrastructuras a  Amazon Web Serices.</h5>
+    <h5>Tengo más de <a href="https://www.linkedin.com/in/javierlopezmunoz/">15 años de experiencia</a> liderando y construyendo equipos técnicos, implementando architecturas para applicaciones web así como desarrollando infraestructuras en el Cloud.</h5>
+    <h5>Soy un experto desarrollando applicaciones con Django, APIs usando Flask o desarrollando (migrando) infrastructuras a  Amazon Web Serices.</h5>
 
     <h2 class="title">Clientes</h2>
-    <h5 class="description">Mis mejores clientes son pequeñas-o-medianas startups que necesitan escalar su aplicacion web, migrar su infrastrutura a AWS o construir desde zero una aplicación simple pero sólida.</h5>
-    <h5 class="description"> Estos son algunos de los proyectos con los que he colaborado en el pasado.</h5>
+    <h5>Mis mejores clientes son pequeñas-o-medianas startups que necesitan escalar su aplicacion web, migrar su infrastrutura a AWS o construir desde zero una aplicación simple pero sólida.</h5>
+    <h5> Estos son algunos de los proyectos con los que he colaborado en el pasado.</h5>
     <div class="row" style="padding-bottom: 20px;">
       <div class="col-md-2 offset-md-2"><a href="https://www.infopraca.pl" title="Infopraca"><img src="/static/img/infopraca.png" alt="Infopraca"></a></div>
       <div class="col-md-2"><a href="https://europelanguagejobs.com" title="Europe Language Jobs"><img src="/static/img/europelanguagejobs.png" alt="Europe Language Jobs"></a></div>
@@ -32,6 +45,6 @@ body:
     </div>
 
     <h2 class="title">Trabajemos juntos!</h2>
-    <h5 class="description">En estos momentos estoy aceptando clientes nuevos. Mis servicios están disponibles tanto como paquetes con un precio fijo así como consutoria por día de trabajo. No dudes en contactame para cualquier pregunta. <a href="/services">Consulta todos los servicios</a>.</h5>
+    <h5>En estos momentos estoy aceptando clientes nuevos. Mis servicios están disponibles tanto como paquetes con un precio fijo así como consutoria por día de trabajo. No dudes en contactame para cualquier pregunta. <a href="/services">Consulta todos los servicios</a>.</h5>
   </div>
 </div>
