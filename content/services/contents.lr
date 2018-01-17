@@ -23,10 +23,6 @@ body:
   <div class="row">
     <h5>Mis servicios están disponibles tanto como paquetes con un precio fijo así como consutoria por día de trabajo. No dudes en contactame para cualquier pregunta. <a href="/contact">Contacta conmigo</a> y encontraremos justos la mejor manera de trabjar juntos.</h5>
 
-    <h2 class="title">Una hora de consultoria via teleconferencia</h2>
-    <h5 class="description">¿Estás planificando tu próxima startup y necesitas asesoramiento ténico? ¿Necesitas ayuda para incoporar trabajo remoto en tu equipo técnico? Estaría encantado de ayudarte. Revisemos justos tu problema y encontraremos los pasos necesarios para solucionarlo. Recivirás la teleconferencia gravada en video así como un resume escrito de los pasos a seguir.</h5>
-    <p>Una hora de consultoria via teleconferencia tiene un precio de €145. <a href="/contact">Contactame</a></p>
-
     <h2 class="title">Informe sobre el escalado de tu aplicación web</h2>
     <h5 class="description">¿Tienes problemas con el rendimiendo de tu aplicación Django? ¿Tiens previsto un crecimiento en tráfico y quieres estar preparado? Estaría encantado de ayudarte. Después de un análisis de código e infrastructura escribiré para ti un informe con acciones detelladas para ejecutar. Puedes usar este informe para ejecutar los cambios tu mismo o contratarme para que lo haga yo por ti. Este paquete incluye dos teleconferencias: una primera para revisar juntos tu aplicación web y una al final para revisar el informe.</h5>
     <p>El informe sobre el escalado tiene un precio €2033. <a href="/contact">Contactame</a></p>
@@ -37,10 +33,10 @@ body:
 
     <h2 class="title">Desarrollo de una aplicación web</h2>
     <h5 class="description">¿Interesado en crear un Minimum Viable Product en un par de semanas? Juntos crearemos el roadmap para tu aplicación y yo me encargaré the hacerla realidad.</h5>
-    <p>Desarrollo de una aplicación web tiene un coste de €508/día y normalmente se tarda de 15 a 25 días. <a href="/contact">Contactame</a></p>
+    <p>Desarrollo de una aplicación web tiene un coste de €550/día y normalmente se tarda de 15 a 25 días. <a href="/contact">Contactame</a></p>
 
     <h2 class="title">Migración de tu infrastrutura a Amazon Web Services</h2>
     <h5 class="description">¿Tu infrastructura se queda pequeña y necesitas crecer? ¿Necesitas escalar de forma variable a lo largo del día/semana?¿Quieres migrar uno de tus servicios a una architectura server-less? Me encargaré de todos los pasos de la migracion desde la migración de datos, la instalación de código así como del setup de las instancias en AWS. Este servicio incluye el código para la automatización de la infrastrucuta en AWS.</h5>
-    <p>Migración de tu infrastrutura a AWS tiene un coste de €508/día y normalmente se tarda de 10 a 15 días. <a href="/contact">Contactame</a></p>
+    <p>Migración de tu infrastrutura a AWS tiene un coste de €550/día y normalmente se tarda de 10 a 15 días. <a href="/contact">Contactame</a></p>
   </div>
 </div>
